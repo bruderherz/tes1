@@ -1,0 +1,106 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>formulaire</title>
+
+<script type="text/javascript" src="ttp.js"></script>
+<script type="text/javascript">
+function ChangeStatut(formulaire) {
+if(formulaire.regagree.checked == true) {formulaire.validation.disabled = false }
+if(formulaire.regagree.checked == false) {formulaire.validation.disabled = true }
+}
+</script>
+<script src="passparam.js" LANGUAGE="JavaScript"></script>
+<script LANGUAGE="JavaScript">
+    function Envoyer(f) {
+            f.submit();
+    }
+</script>
+<script LANGUAGE="JavaScript">
+
+function verifForm(formulaire)
+{
+if(formulaire.nom.value == "")
+alert('saisissez votre pseudo !!');
+else
+formulaire.submit();
+}
+</script>
+
+</head>
+
+<body bgcolor="#666666" >
+<script language="javascript">
+
+</script>
+<font color="#ffffcc" dir="ltr" face="Times New Roman" size="+6"><center><u>Remplir le formulaire</blink></u>
+</center></font><br /><br /><br />
+<form Action="mailto:progbdou@gmail.com?subject=Essaie formulaire" Method="Post" Entype="text/plain" name="formulaire1">
+<center>
+Nom:<br>
+  <input name="n1" size="30" ><br /><br />
+Prénom:<br>
+<input name="prenom" size="30" ><br /><br />
+Date de naissance:<br>
+<select style="WIDTH: 57px"><option selected>jour</option><option>--------------------</option><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option>
+  <option>22</option>
+  <option>23</option>
+  <option>24</option>
+  <option>25</option>
+  <option>26</option>
+  <option>27</option>
+  <option>28</option>
+  <option>29</option>
+  <option>30</option>
+  <option>31</option>
+</select>
+<select style="WIDTH: 58px"><option  selected>mois</option>
+  <option>----------------------</option>
+  <option>01</option>
+  <option>02</option>
+  <option>03</option>
+  <option>04</option>
+  <option>05</option>
+  <option>06</option>
+  <option>07</option>
+  <option>08</option>
+  <option>09</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+</select>
+<input name="annee" size="6" value="année">
+<br /><br />
+homme:
+<input type="radio" tcheked> femme: <INPUT type="radio"><BR/>
+<br />
+<b>choisir un pseudo* :</b><br/> <input name="nom" size="30" /><br /><br />
+<b>E-mail* :<u>exemple:
+ votre_nom@hotmail.com</u> </b><br /> <input name="email" size="30" /><br />
+<br />
+<b>mot de passe* :</b> <br /><input type="password" name="adresse" size="30" >
+<br /><br />
+confirmer mot de passe* :<br><input type="password" name="confirmer" size="30" /><br /><br />
+Ajouter votre photo:<br />
+
+<input type="file" ><br /><br />
+Exemple d'un contrat:<br /><textarea rows="6" cols="40" disabled="disabled">ce formulaire est réalisé pour vous:
+pour l'essayer,remplissez le pseudo,le mot de passe,et l'e-mail
+puis cliquez sur vérifiez vos informations avant de s'inscrire </textarea><br /><br />
+
+<p><input type="checkbox" name="regagree" value="valeur" onClick="ChangeStatut(this.form)" />J'ai fais la vérification</p>
+
+<p>
+<input TYPE="button" value="Vérifier vos informations avant de s'inscrire" onClick="affichage();" />
+<input type="button" name="validation" value="S'inscrire" disabled onClick="verifForm(this.form)" />
+<input type="reset" value="effacer la saisie" />
+<input type="button" value="fermer la fenêtre" onclick="self.close()" /></p>
+<hr align="center" /><font color="#FFFFCC">Réalisé par Nous</font>
+</center>
+</form>
+<script language="JavaScript">
+
+</script>
+</body>
+</html>
